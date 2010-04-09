@@ -1,0 +1,4 @@
+%h2 New car
+= render :partial => "form", :locals => {:car => @car}
+%ul
+  %li= link_to 'Back', cars_path

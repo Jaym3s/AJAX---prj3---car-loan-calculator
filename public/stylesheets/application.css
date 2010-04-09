@@ -1,0 +1,8 @@
+
+#left { width: 59.9%; background-color: #999966; }
+
+h1 { border-bottom: 1px #000 solid; padding-bottom: 5px; }
+
+#wrapper { width: 800px; text-align: left; margin: auto; }
+
+#toy_car { width: 40%; float: right; }

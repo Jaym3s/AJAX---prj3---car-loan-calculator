@@ -1,0 +1,8 @@
+%h2 Listing cars
+- if !@cars.empty?
+  .cars
+    = render :partial => "car", :collection => @cars
+  = will_paginate(@cars)
+- else
+  %p There are no cars to show yet.
+= link_to 'New car', new_car_path

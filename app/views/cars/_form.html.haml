@@ -1,0 +1,20 @@
+- form_for(car) do |f|
+  = f.error_messages
+  %p
+    = f.label :make
+    %br
+    = f.text_field :make
+  %p
+    = f.label :model
+    %br
+    = f.text_field :model
+  %p
+    = f.label :name
+    %br
+    = f.text_field :name
+  %p
+    = f.label :price
+    %br
+    = f.text_field :price
+  %p
+    = f.submit "Submit"

@@ -1,0 +1,6 @@
+%h2 Editing car
+= render :partial => "form", :locals => {:car => @car}
+%ul
+  %li= link_to 'Show', @car
+  %li= link_to 'Back', cars_path
+  %li= link_to 'Destroy', @car, :confirm => 'Are you sure?', :method => :delete  

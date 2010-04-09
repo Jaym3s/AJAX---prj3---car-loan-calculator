@@ -1,0 +1,17 @@
+- content_tag_for :div, car do
+  %ul
+    %li
+      %strong Make:
+      =h car.model.make.name
+    %li
+      %strong Model:
+      =h car.model.name
+    %li
+      %strong Trim:
+      =h car.name
+    %li
+      %strong Price:
+      =h car.price
+    = link_to 'Show', car
+    = link_to 'Edit', edit_car_path(car)
+    = link_to 'Destroy', car, :confirm => 'Are you sure?', :method => :delete

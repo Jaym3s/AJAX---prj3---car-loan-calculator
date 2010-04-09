@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Project 3 - Cars</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/application.css">
+    <script src="javascripts/jquery-1.4.2.js" type="text/javascript"></script>
+    <script src="javascripts/application.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="sleft">
+      <h1 id="no_js_warning">You must enable javascript to view this page correctly!</h1>
+      <h1>Car loan calculator</h1>
+      <fieldset>
+        <legend>Car selector</legend>
+        <div id="car_makes_container">
+          <label for="make">Car Make:</label>
+          <select name="make" id="makes"></select>
+        </div>
+        <div id="car_models_container">
+          <label for="model">Car Model:</label>
+          <select name="model" id="models"></select>
+        </div>
+        <div id="car_trims_container">
+          <label for="car">Car Trim:</label>
+          <select name="car" id="cars"></select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Loan Calculator</legend>
+        <div id="loan_amount_container">
+          <label for="loanAmount">Car Price:</label>
+          <input type="text" value="..." readonly="true" id="loanAmount" />
+        </div>
+        <div id="down_payment_container">
+          <label for="downPayment">Down Payment:</label>
+          <input type="text" value="0" id="downPayment" />
+        </div>
+        <div id="interest_container">
+          <label for="interest">Yearly Interest Rate:</label>
+          <select name="interest" id="interest">
+            <option value="0">0%</option>
+            <option value="1">1%</option>
+            <option value="2">2%</option>
+            <option value="3">3%</option>
+            <option value="4">4%</option>
+            <option value="5">5%</option>
+            <option value="6">6%</option>
+            <option value="7">7%</option>
+            <option value="8">8%</option>
+            <option value="9">9%</option>
+            <option value="10">10%</option>
+          </select>
+        </div>
+        <div id="loan_duration_container">
+          <label for="loanDuration">Loan Term:</label>
+          <select name="loanDuration" id="loanDuration">
+            <option value="24">24</option>
+            <option value="36">36</option>
+            <option value="48">48</option>
+            <option value="60">60</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Total Monthly Payments</legend>
+        <input type="text" value="..." id="totalMonthlyPayment" readonly="true" />
+      </fieldset>
+      <input type="button" value="Calculate Monthly Payment" id="calculateButton" />
+
+    </div>
+    <img id="toy_car" src="images/toy_car.jpg" alt="Toy Car" />
+  </body>
+</html>

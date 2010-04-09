@@ -1,0 +1,18 @@
+%h2= "Car \"#{@car.to_param}\""
+- content_tag_for :div, @car do
+  %ul
+    %li
+      %strong Model:
+      =h @car.model.name
+    %li
+      %strong Make:
+      =h @car.make.name
+    %li
+      %strong Trim:
+      =h @car.name
+    %li
+      %strong Price:
+      =h @car.price
+%ul
+  %li= link_to 'Edit', edit_car_path(@car)
+  %li= link_to 'Back', cars_path

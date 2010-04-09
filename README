@@ -1,0 +1,117 @@
+AJAX and Javascript Web Development
+
+40 Points
+
+10-152-168
+
+Project Overview
+
+This project is intended to start working with AJAX and dealing with server-side interaction through client-side script
+Project Requirements - AJAX, Server-Side Code, Cascading Drop-Down Lists
+
+- use cascading drop-down-lists
+x- once a manufacturer(make) is chosen
+ x - retrieve the corresponding models from server-side code. 
+  x  - once a model is chosen
+   x   - retrieve the corresponding trim level for that particular model from server-side code.
+    x    - based on the trim level the user selected
+     x     - retrieve a calculated price (see vehicle info below)
+- allow the user to put a down payment on the car
+- allow the user to select an interest rate (0 - 10 whole numbers only)
+- allow the user to select a loan term (24 months, 36 months, 48 months, or 60 months)
+- calculate the monthly payment based on the above information
+this should all be done inside of a CarService class within javascript except when noted to use server side code
+
+:Project Inputs
+
+The projects inputs for this project are user input - they select the make, model, and trim level. 
+Based on the model and trim level, you will have a price. 
+The user then enters the downpayment, the interest rate, and loan term.
+
+{ :toyota => {
+    :prius => {
+      :package1 => {:price => 20000},
+      :tech_package => {:price => 22000}
+    },
+    :camry => {
+      :CE => {:price => 20000},
+      :LE => {:price => 23000},
+      :XLE => {:price => 26000},
+      :hybrid => {:price => 29000}
+    },
+    :rav4 => {
+      :CE => {:price => 24000},
+      :LE => {:price => 27000},
+      :Limited => {:price => 30000}
+    },
+    :tundra => {
+      :Base => {:price => 24000},
+      :SR5 => {:price => 28000},
+      :Limited => {:price => 33000}
+    },
+    :tacoma => {
+      :Base => {:price => 24000},
+      :SR5 => {:price => 28000},
+      :Limited => {:price => 33000}
+    }
+  },
+  :honda => {
+    :civic => {
+      :LX => {:price => 17000},
+      :EX => {:price => 19500}
+    },
+    :accord => {
+      :LX => {:price => 20000},
+      :SE => {:price => 22000},
+      :EX => {:price => 24000},
+      :EX_L => {:price => 26000}
+    },
+    :fit => {
+      :Base => {:price => 14500},
+      :Sport => {:price => 16000}
+    },
+    :element => {
+      :LX => {:price => 20000},
+      :EX => {:price => 22000}
+    },
+    :CR_V => {
+      :LX => {:price => 20000},
+      :EX => {:price => 22000},
+      :EX_L => {:price => 25000}
+    }
+  },
+  :ford => {
+    :taurus => {
+      :SE => {:price => 20000},
+      :SEL => {:price => 23000},
+      :Limited => {:price => 27000}
+    },
+    :focus => {
+      :S => {:price => 13000},
+      :SE => {:price => 15000},
+      :SES => {:price => 16500}
+    },
+    :F_150 => {
+      :XL => {:price => 22000},
+      :STX => {:price => 26000},
+      :XLT => {:price => 30000}
+    },
+    :escape => {
+      :XLS => {:price => 20000},
+      :XLT => {:price => 25000},
+      :Hybrid => {:price => 30000}
+    },
+    :explorer => {
+      :XLT => {:price => 22000},
+      :Eddie_Bauer => {:price => 27000},
+      :Limited => {:price => 32000}
+    }
+  }
+}
+
+
+Project Objectives
+
+introduction to ajax functionality
+cascading drop down lists
+interacting with server-side code
